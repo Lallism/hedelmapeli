@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hedelmäpeli</title>
+</head>
+<body>
+    <header>
+        <h1>Hedelmäpeli</h1>
+    </header>
+    <main>
+        <div class="left-column">
+            <div id="rewards" class="box">
+                <div class="reward-box">
+                    <img src="gfx/cherry.png" height="32px" width="32px">
+                    <img src="gfx/cherry.png" height="32px" width="32px">
+                    <img src="gfx/cherry.png" height="32px" width="32px">
+                    <img src="gfx/cherry.png" height="32px" width="32px">
+                    <p class="reward-text">= 3x</p>
+                </div>
+                <div class="reward-box">
+                    <img src="gfx/pear.png" height="32px" width="32px">
+                    <img src="gfx/pear.png" height="32px" width="32px">
+                    <img src="gfx/pear.png" height="32px" width="32px">
+                    <img src="gfx/pear.png" height="32px" width="32px">
+                    <p class="reward-text">= 4x</p>
+                </div>
+                <div class="reward-box">
+                    <img src="gfx/watermelon.png" height="32px" width="32px">
+                    <img src="gfx/watermelon.png" height="32px" width="32px">
+                    <img src="gfx/watermelon.png" height="32px" width="32px">
+                    <img src="gfx/watermelon.png" height="32px" width="32px">
+                    <p class="reward-text">= 5x</p>
+                </div>
+                <div class="reward-box">
+                    <img src="gfx/apple.png" height="32px" width="32px">
+                    <img src="gfx/apple.png" height="32px" width="32px">
+                    <img src="gfx/apple.png" height="32px" width="32px">
+                    <img src="gfx/apple.png" height="32px" width="32px">
+                    <p class="reward-text">= 6x</p>
+                </div>
+                <div class="reward-box">
+                    <img src="gfx/seven.png" height="32px" width="32px">
+                    <img src="gfx/seven.png" height="32px" width="32px">
+                    <img src="gfx/seven.png" height="32px" width="32px">
+                    <p class="reward-text">= 5x</p>
+                </div>
+                <div class="reward-box">
+                    <img src="gfx/seven.png" height="32px" width="32px">
+                    <img src="gfx/seven.png" height="32px" width="32px">
+                    <img src="gfx/seven.png" height="32px" width="32px">
+                    <img src="gfx/seven.png" height="32px" width="32px">
+                    <p class="reward-text">= 10x</p>
+                </div>
+            </div>
+            <div id="slots">
+                <div class="slot">
+                    <img src="gfx/apple.png" id="slot1" class="slot-img box">
+                    <button id="lock1" class="button-disabled">Lukitse</button>
+                </div>
+                <div class="slot">
+                    <img src="gfx/apple.png" id="slot2" class="slot-img box">
+                    <button id="lock2" class="button-disabled">Lukitse</button>
+                </div>
+                <div class="slot">
+                    <img src="gfx/apple.png" id="slot3" class="slot-img box">
+                    <button id="lock3" class="button-disabled">Lukitse</button>
+                </div>
+                <div class="slot">
+                    <img src="gfx/apple.png" id="slot4" class="slot-img box">
+                    <button id="lock4" class="button-disabled">Lukitse</button>
+                </div>
+            </div>
+            <div class="info box">
+                <p id="info-text" class="hidden">Voitit x euroa!</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div id="money-counter">
+                <img src="gfx/coin.png" height="32px" width="32px">
+                <p id="money" class="box">50€</p>
+            </div>
+            <div id="bet-counter">
+                <button id="bet-decrease" class="button">-</button>
+                <p id="bet-text" class="box">Panos: 1€</p>
+                <button id="bet-increase" class="button">+</button>
+            </div>
+            <button id="play" class="button">Pelaa</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
